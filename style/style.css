@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: 'Indie+Flower', monospace;
+}
+
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+}
+
+section.price-plan {
+    border: 1px dashed black;
+    height: 300px;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper{
+    font-size: 50px;
+    width: 20%;
+/*    flex 1: padaro visus elementus vienodo plocio*/
+    height: 200px;
+    border: 1px dashed red;
+}
+
+@media (max-width: 700px){
+    .first{
+        order:1;
+    }
+    .wrapper{
+        width: 100%;
+    }
+    
+    section.price-plan{
+        flex-wrap: wrap; /*        nuima talpinima is naujos eiles*/
+    }
+}
+
+
+
+
+
+
+
+
+
